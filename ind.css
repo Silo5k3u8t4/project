@@ -1,0 +1,12 @@
+.frame-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .frame1,
+  .frame2 {
+    border: none;
+  }
+  .frame2 {
+    flex-grow: 10;
+  }
