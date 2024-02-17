@@ -1,0 +1,46 @@
+img[name="logo"]{
+    display : block;
+    position : fixed;
+    left:4px;
+    top:2px;
+    bottom:30px;
+    width:145px;
+    height:145px;
+    border-radius:100px;
+    border: rgb(0, 48, 206) 10px;
+}
+img[name="con"]{
+    display : block;
+    position : fixed;
+    right:34px;
+    top:25px;
+    width:40px;
+    height:40px;
+}
+img[name="t"]{
+    display : block;
+    position : fixed;
+    right: 130px;
+    top:25px;
+    width:40px;
+    height:40px;
+}
+img[name="v"]{
+    display : block;
+    position : fixed;
+    right: 215px;
+    top:27px;
+    width:30px;
+    height:30px;
+}
+p {
+    margin-top:70px;
+}
+a {
+    text-decoration: none;
+    font-family:Helvetica;
+    color:rgb(0, 174, 255);
+}
+body{
+    background:linear-gradient(to top,aqua 20%,rgb(255, 255, 255) 80%);
+}
