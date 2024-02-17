@@ -1,108 +1,49 @@
 <html>
-    <head>
-        <title>home</title>
-    </head>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Figtree", sans-serif;
-}
-
-body {
-	display: grid;
-	place-content: center;
-	min-height: 100vh;
-	background: aqua;
-}
-
-.container {
-	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 1em;
-	width: 800px;
-	height: 500px;
-	transition: all 400ms;
-}
-
-.container:hover .box {
-	filter: grayscale(100%) opacity(24%);
-}
-
-.box {
-	position: relative;
-	background: var(--img) center center;
-	background-size: cover;
-	transition: all 400ms;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.container .box:hover {
-	filter: grayscale(0%) opacity(100%);
-}
-
-.container:has(.box-1:hover) {
-	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-2:hover) {
-	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-3:hover) {
-	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-}
-
-.container:has(.box-4:hover) {
-	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
-}
-
-.container:has(.box-5:hover) {
-	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
-}
-
-.box:nth-child(odd) {
-	transform: translateY(-16px);
-}
-
-.box:nth-child(even) {
-	transform: translateY(16px);
-}
-
-.box::after {
-	content: attr(data-text);
-	position: absolute;
-	bottom: 20px;
-	background: #000;
-	color: #fff;
-	padding: 10px 10px 10px 14px;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	transform: translateY(60px);
-	opacity: 0;
-	transition: all 400ms;
-}
-
-.box:hover::after {
-	transform: translateY(0);
-	opacity: 1;
-	transition-delay: 400ms;
-}
-
-    </style>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>home</title>
+		<link href="hs.css"  rel="stylesheet">
+	</head>
     <body>
         <div class="container">
-            <div class="box box-1" style="--img: url(https://i.postimg.cc/0jwsP6f2/prep.jpg);" data-text="Exam Preperation"></div>
+            <div class="box box-1" style="--img: url(https://i.postimg.cc/0jwsP6f2/prep.jpg);" data-text="Exam preperation"></div>
             <div class="box box-2" style="--img: url(https://i.postimg.cc/c4NxdSK1/17973872.jpg);" data-text="Quiz Time"></div>
             <div class="box box-3" style="--img: url(https://i.postimg.cc/kG3jRw88/quiz1.jpg);" data-text="Knowledge Center"></div>
             <div class="box box-4" style="--img: url(https://i.postimg.cc/sDzSBbBK/pexels-rdne-stock-project-5530775.jpg);" data-text="Notes Upload"></div>
-            <div class="box box-5" style="--img: url(https://i.postimg.cc/nrcWyW4H/img-5.jpg);" data-text="Future scope"></div>
+            <div class="box box-5" style="--img: url(https://i.postimg.cc/mrccrSsk/5899209.jpg);" data-text="Future scope"></div>
+            
+<script>
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(box => {
+        box.addEventListener('click', function() {
+            const content = this.getAttribute('data-text');
+            if(content=="Exam preperation")
+            {
+            	window.location.href = "ex.html";
+            }
+            if(content=="Quiz Time")
+            {
+            	window.location.href = "quiz.html";
+            }
+			if(content=="Knowledge Center")
+            {
+            	window.location.href = "notes.html";
+            }
+			if(content=="Notes Upload")
+            {
+            	window.location.href = "up.html";
+            }
+			if(content=="Future scope")
+            {
+            	window.location.href = "hope.html";
+            }
+            
+        });
+    });
+</script>
         </div>
     </body>
 </html>
