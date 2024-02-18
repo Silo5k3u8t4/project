@@ -1,46 +1,50 @@
-img[name="logo"]{
-    display : block;
-    position : fixed;
-    left:4px;
-    top:2px;
-    bottom:30px;
-    width:145px;
-    height:145px;
-    border-radius:100px;
+img[name="logo"] {
+    display: block;
+    position: fixed;
+    left: 4px;
+    top: 2px;
+    bottom: 30px;
+    width: 145px;
+    height: 145px;
+    border-radius: 100px;
     border: rgb(0, 48, 206) 10px;
 }
-img[name="con"]{
-    display : block;
-    position : fixed;
-    right:34px;
-    top:25px;
-    width:40px;
-    height:40px;
+
+img[name="con"],
+img[name="t"],
+img[name="v"] {
+    display: block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
 }
-img[name="t"]{
-    display : block;
-    position : fixed;
+
+img[name="con"] {
+    right: 34px;
+    top: 25px;
+}
+
+img[name="t"] {
     right: 130px;
-    top:25px;
-    width:40px;
-    height:40px;
+    top: 25px;
 }
-img[name="v"]{
-    display : block;
-    position : fixed;
+
+img[name="v"] {
     right: 215px;
-    top:27px;
-    width:30px;
-    height:30px;
+    top: 27px;
 }
+
 p {
-    margin-top:70px;
+    margin-top: 70px;
 }
+
 a {
     text-decoration: none;
-    font-family:Helvetica;
-    color:rgb(0, 174, 255);
+    font-family: Helvetica;
+    color: rgb(0, 174, 255);
 }
-body{
-    background:linear-gradient(to top,aqua 20%,rgb(255, 255, 255) 80%);
+
+body {
+    background: linear-gradient(to top, aqua 20%, rgb(255, 255, 255) 80%);
+    height: 80vh;
 }
