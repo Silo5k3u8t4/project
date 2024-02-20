@@ -43,7 +43,7 @@ button[name="clicker"]{
 }
 video{
   margin-top:150px;
-  box-shadow:0px 4px 50px #05C3DD;
+  box-shadow:0px 4px 30px #05C3DD;
 }
 .one{
   z-index: 1;
@@ -56,6 +56,4 @@ video{
 }
 .container{
   z-index: 1;
-  border-left: 5px;
-  border-color: aqua;
 }
