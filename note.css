@@ -5,26 +5,25 @@ body{
 }
 .background {
   
-	position
-	:
-	 absolute
-	;
-	  
-	display
-	:
-	 block
-	;
-	  
-	top
-	: 0;
-	  
-	left
-	: 0;
-	  
-	z-index
-	: 0;
-	}
-
+    position
+    :
+     absolute
+    ;
+      
+    display
+    :
+     block
+    ;
+      
+    top
+    : 0;
+      
+    left
+    : 0;
+      
+    z-index
+    : -1;
+    }
 #menu {
     width: 150px;
     height: 150px;
@@ -75,7 +74,7 @@ body{
     top: 50%;
     margin: -50px 0 0 -50px;
     border-radius: 50%;
-    background-color: #424242;
+    background-color: aqua;
     transform: translate(0px, 0px);
     transition: transform 500ms;
     z-index: -2;
@@ -84,36 +83,43 @@ body{
 
 .menu-item:hover{
 opacity: 0.5;
-  box-shadow: 0 5px 10px black; 
+  box-shadow: 0 5px 10px aqua; 
 }
 
 
 .menu-item a {
-    color: #fff;
+    color: blue;
     position: relative;
-    top: 30%;
-    left: 0;
+    text-align: center;
+    top: 50%;
+    left: 10px;
     text-decoration: none;
+    z-index: 2;
 }
 
 #menu:target>.menu-item:nth-child(6) {
-    transform: rotate(60deg) translateY(-150px) rotate(300deg);
-    transition-delay: 0s;
-}
-
-#menu:target>.menu-item:nth-child(5) {
-    transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+    transform: rotate(45deg) translateY(-150px) rotate(315deg);
     transition-delay: 0.1s;
 }
 
-#menu:target>.menu-item:nth-child(3) {
-    transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+#menu:target>.menu-item:nth-child(5) {
+    transform: rotate(0deg) translateY(-155px) rotate(0deg);
     transition-delay: 0.2s;
 }
 
-#menu:target>.menu-item:nth-child(4) {
-    transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+#menu:target>.menu-item:nth-child(3) {
+    transform: rotate(-45deg) translateY(-155px) rotate(45deg);
     transition-delay: 0.3s;
+}
+
+#menu:target>.menu-item:nth-child(4) {
+    transform: rotate(-90deg) translateY(-150px) rotate(90deg);
+    transition-delay: 0.4s;
+}
+
+#menu:target>.menu-item:nth-child(7) {
+    transform: rotate(90deg) translateY(-150px) rotate(270deg);
+    transition-delay: 0s;
 }
 
 .content{

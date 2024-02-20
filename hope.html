@@ -5,7 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.engineering-branch {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+</style>
+</head>
 <body>
+  <header>
+    <h1>Exploring Future Scope in Engineering Branches</h1>
+  </header>
+  <div class="container">
     <canvas class="background"></canvas>
         <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
         <script>
@@ -13,6 +59,46 @@
           Particles.init({selector: '.background'});
         };
         </script>
-    <p>will be future</p>
+    <section id="cse" class="engineering-branch">
+      <h2>Computer Science & Engineering (CSE)</h2>
+      <p>Computer Science & Engineering offers a wide range of career opportunities in fields such as:</p>
+      <ul>
+        <li>Software Development</li>
+        <li>Data Science</li>
+        <li>Artificial Intelligence</li>
+        <li>Cybersecurity</li>
+        <li>Web Development</li>
+      </ul>
+      <p>CSE graduates have opportunities to work in various industries, including IT companies, startups, research organizations, and government agencies.</p>
+    </section>
+    
+    <section id="me" class="engineering-branch">
+      <h2>Mechanical Engineering (ME)</h2>
+      <p>Mechanical Engineering offers diverse career opportunities in industries such as:</p>
+      <ul>
+        <li>Automotive</li>
+        <li>Aerospace</li>
+        <li>Manufacturing</li>
+        <li>Energy</li>
+        <li>Robotics</li>
+      </ul>
+      <p>ME graduates can work as design engineers, project managers, consultants, researchers, or entrepreneurs.</p>
+    </section>
+    
+    <section id="ece" class="engineering-branch">
+      <h2>Electronics & Communication Engineering (ECE)</h2>
+      <p>Electronics & Communication Engineering offers career opportunities in fields such as:</p>
+      <ul>
+        <li>Telecommunications</li>
+        <li>Embedded Systems</li>
+        <li>IoT (Internet of Things)</li>
+        <li>Robotics</li>
+        <li>Consumer Electronics</li>
+      </ul>
+      <p>ECE graduates can work in companies developing communication devices, electronic gadgets, IoT solutions, and more.</p>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
