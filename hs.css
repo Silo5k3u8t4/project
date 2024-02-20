@@ -42,6 +42,7 @@ body {
 	width: 800px;
 	height: 500px;
 	transition: all 400ms;
+	z-index: 1;
 }
 
 .container:hover .box {

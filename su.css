@@ -36,6 +36,7 @@ body {
     box-shadow: 0 0 10px aquamarine;;
     width: 300px;
     text-align: center;
+    z-index: 1;
 }
 
 .signup-container h2 {
