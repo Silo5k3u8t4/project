@@ -8,6 +8,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <canvas class="background"></canvas>
+        <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+        window.onload= function() {
+          Particles.init({selector: '.background'});
+        };
+        </script>
 <div class="container">
      <ul id="menu">
             <a class="menu-button icon-plus" id="open-menu" href="#menu" title="Show navigation"></a>

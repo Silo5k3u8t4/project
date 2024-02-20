@@ -7,6 +7,13 @@
     <link href="su.css"  rel="stylesheet">
 </head>
 <body>
+    <canvas class="background"></canvas>
+        <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+        window.onload= function() {
+          Particles.init({selector: '.background'});
+        };
+        </script>
 
     <div class="signup-container">
         <h2>Signup</h2>

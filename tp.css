@@ -10,6 +10,27 @@ img[name="logo"] {
     border: rgb(0, 48, 206) 10px;
 }
 
+.background {
+  
+	position
+	:
+	 absolute
+	;
+	  
+	display
+	:
+	 block
+	;
+	  
+	top
+	: 0;
+	  
+	left
+	: 0;
+	  
+	z-index
+	: 0;
+	}
 img[name="con"],
 img[name="t"],
 img[name="v"] {
