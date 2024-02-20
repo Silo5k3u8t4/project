@@ -6,12 +6,32 @@
 	box-sizing: border-box;
 	font-family: "Figtree", sans-serif;
 }
-
+.background {
+  
+	position
+	:
+	 absolute
+	;
+	  
+	display
+	:
+	 block
+	;
+	  
+	top
+	: 0;
+	  
+	left
+	: 0;
+	  
+	z-index
+	: 0;
+	}
 body {
 	display: grid;
 	place-content: center;
 	min-height: 100vh;
-	background: aqua;
+	background: white ;
 }
 
 .container {
