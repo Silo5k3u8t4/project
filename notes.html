@@ -52,5 +52,13 @@
     </div>
   </div>
 </div>
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const content = this.getAttribute('data-text');
+        // You can add your redirection logic here based on the content
+        console.log("Redirect to " + content);
+    });
+});
 </body>
 </html>
