@@ -90,6 +90,9 @@ body {
     text-decoration: none;
     z-index: 2;
   }
+  .menuitem a:hover{
+    text-decoration: none;
+  }
   
   #menu:target>.menuitem:nth-child(6) {
     transform: rotate(45deg) translateY(-150px) rotate(315deg);
