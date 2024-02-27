@@ -96,7 +96,7 @@ body {
   }
   @font-face {
     font-family: 'con';
-    src: url('CalligraphyWet-AX62.ttf') format('truetype');
+    src: url('SnowBlue-OVVwd.otf') format('opentype');
   }
   
   font{
@@ -136,11 +136,11 @@ body {
     text-align: center;
     margin: -10px 0 0 -30px;
     top: 70%;
-    left: 43%;
-    font-size: 70px;
-    font-family: con,sans-serif;
+    left: 39%;
+    font-size: 1.5rem;
+    color: blue;
   }
-  .text{
-    font-size: 70px;
+  h1 {
+    font-size: 1.5rem;
     font-family: con,sans-serif;
   }
