@@ -86,9 +86,16 @@ body {
     position: relative;
     text-align: center;
     top: 50%;
-    left: 20px;
     text-decoration: none;
     z-index: 2;
+  }
+  .menuitem #one
+  {
+    left: 15px;
+  }
+  .menuitem #two
+  {
+    margin-left: 25px;
   }
   @font-face {
     font-family: 'BillyOhio';
