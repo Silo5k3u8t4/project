@@ -85,21 +85,18 @@ body {
     color: blue;
     position: relative;
     text-align: center;
-    top: 50%;
+    top: 52%;
+    left: 15px;
     text-decoration: none;
     z-index: 2;
-  }
-  .menuitem #one
-  {
-    left: 15px;
-  }
-  .menuitem #two
-  {
-    margin-left: 25px;
   }
   @font-face {
     font-family: 'BillyOhio';
     src: url('BillyOhio-85lM.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'con';
+    src: url('CalligraphyWet-AX62.ttf') format('truetype');
   }
   
   font{
@@ -139,7 +136,11 @@ body {
     text-align: center;
     margin: -10px 0 0 -30px;
     top: 70%;
-    left: 45%;
-    font-size: 20px;
+    left: 43%;
+    font-size: 70px;
+    font-family: con,sans-serif;
   }
-  
+  .text{
+    font-size: 70px;
+    font-family: con,sans-serif;
+  }
