@@ -86,9 +86,17 @@ body {
     position: relative;
     text-align: center;
     top: 50%;
-    left: 10px;
+    left: 20px;
     text-decoration: none;
     z-index: 2;
+  }
+  @font-face {
+    font-family: 'BillyOhio';
+    src: url('BillyOhio-85lM.ttf') format('truetype');
+  }
+  
+  font{
+    font-family: BillyOhio, sans-serif  
   }
   .menuitem a:hover{
     text-decoration: none;
