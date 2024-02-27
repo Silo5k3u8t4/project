@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 1;
+    margin: 0; /* Corrected margin value */
     padding: 0;
 }
 
@@ -26,7 +28,7 @@ h1 {
     text-align: center;
 }
 
-.visitor-tracking, .question-paper-upload, .notes-upload {
+.section {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -57,23 +59,32 @@ button:hover {
 </style>
 </head>
 <body>
+
+
 <div class="container">
     <h1>Admin Page</h1>
-    <div class="visitor-tracking">
+    <div class="section visitor-tracking">
         <h2>Visitor Tracking</h2>
         <p>Total Visitors: <span id="visitor-count">0</span></p>
     </div>
-    <div class="question-paper-upload">
+    <div class="section question-paper-upload">
         <h2>Question Paper Upload</h2>
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="file" id="question-paper-file">
             <button type="submit">Upload</button>
         </form>
     </div>
-    <div class="notes-upload">
+    <div class="section notes-upload">
         <h2>Notes Upload</h2>
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="file" id="notes-file">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div class="section quiz-upload">
+        <h2>Quiz Upload</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="quiz-file">
             <button type="submit">Upload</button>
         </form>
     </div>
@@ -86,4 +97,3 @@ button:hover {
 </script>
 </body>
 </html>
-
