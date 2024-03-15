@@ -10,48 +10,37 @@
     border: rgb(0, 48, 206) 10px;
     overflow: hidden;
 }
+.container{
+    position: fixed;
+    height: 20%;
+}
 
-.background {
-  
-	position
-	:
-	 absolute
-	;
-	  
-	display
-	:
-	 block
-	;
-	  
-	top
-	: 0;
-	  
-	left
-	: 0;
-	  
-	z-index
-	: 0;
-	}
 .options{
+    position: fixed;
     display: flex;
-    width: 80px;
+    width: 332px;
     height: 70px;
-    margin-left: 1556px;
+    margin-left: 1538px;
     flex-wrap: nowrap;
+    padding-top: 0.5%;
+    
 }
 .links{
+    position: sticky;
     display: flex;
     width: 320px;
     height:20px;
-    padding: 1%;
-    margin-left: 1568px;
+    padding: 0.5%;
+    padding-top: 4.4%;
+    margin-left: 1553px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
+   
 }
 a{
     text-decoration: none;
 }
 body {
     background: linear-gradient(to top, aqua 20%, rgb(255, 255, 255) 80%);
-    height: 80vh;
+    height: 100vh;
 }
