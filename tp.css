@@ -1,13 +1,14 @@
-img[name="logo"] {
-    display: block;
+.logo{
+    display: flex;
     position: fixed;
     left: 4px;
     top: 2px;
     bottom: 30px;
     width: 145px;
     height: 145px;
-    border-radius: 100px;
+    border-radius: 75px;
     border: rgb(0, 48, 206) 10px;
+    overflow: hidden;
 }
 
 .background {
@@ -31,40 +32,25 @@ img[name="logo"] {
 	z-index
 	: 0;
 	}
-img[name="con"],
-img[name="t"],
-img[name="v"] {
-    display: block;
-    position: fixed;
-    width: 40px;
-    height: 40px;
+.options{
+    display: flex;
+    width: 80px;
+    height: 70px;
+    margin-left: 1556px;
+    flex-wrap: nowrap;
 }
-
-img[name="con"] {
-    right: 34px;
-    top: 25px;
+.links{
+    display: flex;
+    width: 320px;
+    height:20px;
+    padding: 1%;
+    margin-left: 1568px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
 }
-
-img[name="t"] {
-    right: 135px;
-    top: 25px;
-}
-
-img[name="v"] {
-    right: 210px;
-    top: 27px;
-}
-
-p {
-    margin-top: 70px;
-}
-
-a {
+a{
     text-decoration: none;
-    font-family: Helvetica;
-    color: rgb(0, 174, 255);
 }
-
 body {
     background: linear-gradient(to top, aqua 20%, rgb(255, 255, 255) 80%);
     height: 80vh;

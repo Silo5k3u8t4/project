@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="main.css">
 </head>
   <body>
-    <canvas class="background"></canvas>
+    <canvas class="background">
+    </canvas>
         <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
         <script>
         window.onload= function() {
@@ -15,18 +16,21 @@
         };
         </script>
     <div class="container">
-    <div class="one">
-   <button onclick="playPause()" name='clicker'>Play/Pause</button> 
-   </div>
-   <div class="two"></div>
-    <center><video id="video1" width="640" height="360">
-      <source src="movie.mp4" type="video/mp4">
-    </video></center>
-  </div>
-  <div class="three">
-    <button name="login"><a href="login.html" style="text-decoration:none;">LOGIN</a></button>
-  </div>
-</div>
+      <center>
+      <div class="one">
+        <button onclick="playPause()" name='clicker'>Play/Pause</button> 
+      </div>
+      </center>
+      <div class="two">
+        <center>
+          <video id="video1" width="640" height="360">
+            <source src="movie.mp4" type="video/mp4">
+          </video></center>
+      </div>
+      <div class="three">
+        <button name="login"><a href="login.html" style="text-decoration:none;">LOGIN</a></button>
+      </div>
+    </div>
   </body>
 
   <script> 
