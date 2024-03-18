@@ -5,7 +5,9 @@
   }
   .frame1,
   .frame2 {
+    display: flex;
     border: none;
+    overflow: hidden;
   }
   .frame2 {
     flex-grow: 10;
