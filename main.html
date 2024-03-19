@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="cst/main.css">
 </head>
   <body>
     <canvas class="background">
@@ -18,7 +18,8 @@
     <div class="container">
       <center>
       <div class="one">
-        <button onclick="playPause()" name='clicker'>Play/Pause</button> 
+        <button onclick="playPause()" name='clicker'>PLAY/PAUSE</button>
+        <button name="login" onclick='logi()'>LOGIN</button>
       </div>
       </center>
       <div class="two">
@@ -26,9 +27,6 @@
           <video id="video1" width="640" height="360">
             <source src="movie.mp4" type="video/mp4">
           </video></center>
-      </div>
-      <div class="three">
-        <button name="login"><a href="login.html" style="text-decoration:none;">LOGIN</a></button>
       </div>
     </div>
   </body>
@@ -41,5 +39,9 @@
     		else 
     			myVideo.pause(); 
 	}
+  function  logi()
+  {
+    window.location.href = "login.html";
+  }
 </script>
 </html>

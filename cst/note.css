@@ -92,11 +92,11 @@ body {
   }
   @font-face {
     font-family: 'BillyOhio';
-    src: url('fnts/BillyOhio-85lM.ttf') format('truetype');
+    src: url('/fnts/BillyOhio-85lM.ttf') format('truetype');
   }
   @font-face {
     font-family: 'con';
-    src: url('fnts/SnowBlue-OVVwd.otf') format('opentype');
+    src: url('/fnts/SnowBlue-OVVwd.otf') format('opentype');
   }
   
   font{
