@@ -286,15 +286,32 @@ let quizData = [
   ],
   correct: "Can be accessed from anywhere using a mobile database",
 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 const quizContainer = document.querySelector(".quiz-container");
-const question = document.querySelector(".question");
-const options = document.querySelector(".options");
-const nextBtn = document.querySelector(".next-btn");
+const question = document.querySelector(".quiz-container .question");
+const options = document.querySelector(".quiz-container .options");
+const nextBtn = document.querySelector(".quiz-container .next-btn");
 const quizResult = document.querySelector(".quiz-result");
 const startBtnContainer = document.querySelector(".start-btn-container");
-const startBtn = document.querySelector(".start-btn");
+const startBtn = document.querySelector(".start-btn-container .start-btn");
 
 let questionNumber = 0;
 let score = 0;
@@ -362,7 +379,7 @@ const createQuestion = () => {
     questionNumber + 1
   }/${MAX_QUESTIONS}</span>${quizData[questionNumber].question}`;
 
-  let shuffledOptions = shuffleArray(quizData[questionNumber].options);
+  const shuffledOptions = shuffleArray(quizData[questionNumber].options);
 
   shuffledOptions.forEach((o) => {
     const option = document.createElement("button");
@@ -403,27 +420,16 @@ const displayQuizResult = () => {
     const correctAnswer = quizData[i].correct;
 
     let answeredCorrectly = userAnswer === correctAnswer;
-if(userAnswer !=null){
-  if(answeredCorrectly){
-    score++;
-  }
+
+    if (!answeredCorrectly) {
+      resultItem.classList.add("incorrect");
+    }
 
     resultItem.innerHTML = `<div class="question">Question ${i + 1}: ${
       quizData[i].question
     }</div>
-    <div class="user-answer">Your answer: ${userAnswer}</div>
+    <div class="user-answer">Your answer: ${userAnswer || "Not Answered"}</div>
     <div class="correct-answer">Correct answer: ${correctAnswer}</div>`;
-  }
-
-    if(!answeredCorrectly){
-      resultItem.classList.add("incorrect");
-    }else{
-      resultItem.innerHTML = `<div class="question">Question ${i + 1}: ${
-        quizData[i].question
-      }</div>
-      <div class="user-answer">Your answer: Not Answered</div>
-      <div class="correct-answer">Correct answer: ${correctAnswer}</div>`;
-    }
 
     quizResult.appendChild(resultItem);
   }
