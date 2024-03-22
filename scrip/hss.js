@@ -8,7 +8,7 @@ const boxes = document.querySelectorAll('.box');
             }
             if(content=="Quiz Time")
             {
-            	window.location.href = "/quiz/branch.html";
+            	window.location.href = "branch.html";
             }
 			if(content=="Knowledge Center")
             {
