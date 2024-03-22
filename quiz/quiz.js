@@ -315,7 +315,7 @@ const startBtn = document.querySelector(".start-btn-container .start-btn");
 
 let questionNumber = 0;
 let score = 0;
-const MAX_QUESTIONS = 30;
+const MAX_QUESTIONS = 20;
 let timerInterval;
 
 const shuffleArray = (array) => {
@@ -325,9 +325,9 @@ const shuffleArray = (array) => {
 quizData = shuffleArray(quizData);
 
 const resetLocalStorage = () => {
-  for (i = 0; i < MAX_QUESTIONS; i++) {
-    localStorage.removeItem('userAnswer_${i}');
-  }
+  for (let i = 0; i < MAX_QUESTIONS; i++) {
+    localStorage.removeItem(`userAnswer_${i}`);
+  }  
 };
 
 resetLocalStorage();
@@ -409,7 +409,7 @@ const displayQuizResult = () => {
   quizResult.innerHTML = "";
 
   const resultHeading = document.createElement("h2");
-  resultHeading.innerHTML = 'You have scored ${score} out of  ${MAX_QUESTIONS}.';
+  resultHeading.innerHTML = 'You have scored '+score+' out of 20.';
   quizResult.appendChild(resultHeading);
 
   for (let i = 0; i < MAX_QUESTIONS; i++) {
@@ -441,14 +441,14 @@ const displayQuizResult = () => {
   quizResult.appendChild(retakeBtn);
 };
 
-const displayNextQuestion = () => {
-  if (questionNumber >= MAX_QUESTIONS - 1) {
+const displayNextQuestion=() => {
+  if (questionNumber >= 20) {
     displayQuizResult();
     return;
   }
-
-  questionNumber++;
-  createQuestion();
+  else{questionNumber++;
+    createQuestion();
+  }
 };
 
 nextBtn.addEventListener("click", displayNextQuestion);
