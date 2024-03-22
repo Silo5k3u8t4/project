@@ -5,45 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    
+    <script src="quiz.js"></script>
   </head>
-  <style>
-    .background {
-  
-	position
-	:
-	 absolute
-	;
-	  
-	display
-	:
-	 block
-	;
-	  
-	top
-	: 0;
-	  
-	left
-	: 0;
-	  
-	z-index
-	: -1;
-	}
-body {
-	display: grid;
-	place-content: center;
-	min-height: 100vh;
-	background: white ;
-}
-  </style>
   <body>
-    <canvas class="background"></canvas>
-        <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
-        <script>
-        window.onload= function() {
-          Particles.init({selector: '.background'});
-        };
-        </script> 
     <div class="start-btn-container">
       <h2>DataBase Management System</h2>
       <p>Test your knowledge</p>
@@ -57,9 +21,8 @@ body {
       <div class="options"></div>
       <button class="next-btn">Next</button>
     </div>
-    
+
     <div class="quiz-result"></div>
-    <script src="scrip/quiz.js"></script>
 
     
   </body>

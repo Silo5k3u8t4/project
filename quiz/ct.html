@@ -14,33 +14,7 @@
     align-items: center;
     height: 100vh;
   }
-  .background {
   
-	position
-	:
-	 absolute
-	;
-	  
-	display
-	:
-	 block
-	;
-	  
-	top
-	: 0;
-	  
-	left
-	: 0;
-	  
-	z-index
-	: 0;
-	}
-body {
-	display: grid;
-	place-content: center;
-	min-height: 100vh;
-	background: white ;
-}
   #quiz-options {
     text-align: center;
   }
@@ -65,13 +39,7 @@ body {
 </style>
 </head>
 <body>
-  <canvas class="background"></canvas>
-  <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
-  <script>
-  window.onload= function() {
-    Particles.init({selector: '.background'});
-  };
-  </script> 
+
 <div id="quiz-options">
   <h1>CHOOSE SEMESTER OPTION</h1>
   <a href="ct1_suboptions.html"><button class="option-btn">SEM1</button></a>
