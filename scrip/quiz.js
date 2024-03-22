@@ -442,7 +442,7 @@ const displayQuizResult = () => {
 };
 
 const displayNextQuestion=() => {
-  if (questionNumber >= 20) {
+  if (questionNumber >= 19) {
     displayQuizResult();
     return;
   }
