@@ -286,32 +286,15 @@ let quizData = [
   ],
   correct: "Can be accessed from anywhere using a mobile database",
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 const quizContainer = document.querySelector(".quiz-container");
-const question = document.querySelector(".quiz-container .question");
-const options = document.querySelector(".quiz-container .options");
-const nextBtn = document.querySelector(".quiz-container .next-btn");
+const question = document.querySelector(".question");
+const options = document.querySelector(".options");
+const nextBtn = document.querySelector(".next-btn");
 const quizResult = document.querySelector(".quiz-result");
 const startBtnContainer = document.querySelector(".start-btn-container");
-const startBtn = document.querySelector(".start-btn-container .start-btn");
+const startBtn = document.querySelector(".start-btn");
 
 let questionNumber = 0;
 let score = 0;
