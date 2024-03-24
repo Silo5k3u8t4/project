@@ -32,13 +32,10 @@
   </body>
 
   <script> 
-	var myVideo = document.getElementById("video1"); 
-	function playPause() { 
-  		if (myVideo.paused) 
-    			myVideo.play(); 
-    		else 
-    			myVideo.pause(); 
-	}
+	var myVideo = document.getElementById("video1");
+  window.onload= function() {
+    myVideo.play();
+        };
   function  logi()
   {
     window.location.href = "login.html";
