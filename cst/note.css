@@ -38,7 +38,7 @@ body {
     top: 50%;
     margin: -99px;
     border-radius: 50%;
-    background: url('/imgs/lp.png');
+    background: url('/lp.png');
     background-size: 100%;
     overflow: hidden;
     text-decoration: none;
