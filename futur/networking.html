@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking - Future Scope after Diploma in Computer Engineering</title>
     <style>
+        .background {
+  
+  position
+  :
+   absolute
+  ;
+    
+  display
+  :
+   block
+  ;
+    
+  top
+  : 0;
+    
+  left
+  : 0;
+    
+  z-index
+  : -1;
+  }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -55,6 +76,13 @@
     </style>
 </head>
 <body>
+    <canvas class="background"></canvas>
+        <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+        window.onload= function() {
+          Particles.init({selector: '.background'});
+        };
+        </script>
     <div class="container">
         <h1>Networking - Future Scope after Diploma in Computer Engineering</h1>
 

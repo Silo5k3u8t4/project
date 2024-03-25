@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Scope Finder</title>
     <style>
+        .background {
+  
+  position
+  :
+   absolute
+  ;
+    
+  display
+  :
+   block
+  ;
+    
+  top
+  : 0;
+    
+  left
+  : 0;
+    
+  z-index
+  : -1;
+  }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -15,7 +36,6 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
@@ -77,6 +97,13 @@
     </style>
 </head>
 <body>
+    <canvas class="background"></canvas>
+        <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+        window.onload= function() {
+          Particles.init({selector: '.background'});
+        };
+        </script>
     <div class="container">
         <h1>Future Scope Finder</h1>
 
