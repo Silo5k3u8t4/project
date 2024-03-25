@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Scope after Diploma in Computer Engineering</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        #futureScope {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #interest {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            outline: none;
+            color: #333;
+            background-color: #fff;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #007bff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Future Scope after Diploma in Computer Engineering</h1>
+        <div id="futureScope">
+            <label for="interest">Your Interest:</label>
+            <select id="interest">
+                <option value="CHOOSE">CHOOSE</option>
+                <option value="programming">Programming</option>
+                <option value="networking">Networking</option>
+                <option value="webDevelopment">Web Development</option>
+                <option value="softwareTesting">Software Testing</option>
+                <option value="dataScience">Data Science</option>
+            </select>
+            <button onclick="findScope()">Find Future Scope</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function findScope() {
+            var interest = document.getElementById("interest").value;
+            var resultElement = document.getElementById("result");
+
+            switch(interest) {
+                case "programming":
+                    resultElement.textContent = "You can work as a software developer, application developer, or systems programmer.";
+                    break;
+                case "networking":
+                    window.location.href = "networking.html"; // Redirect to networking.html
+                    break;
+                case "webDevelopment":
+                    window.location.href = "webDevelopment.html";   
+                    break;
+                case "softwareTesting":
+                    resultElement.textContent = "You can work as a software tester, quality assurance engineer, or test automation engineer.";
+                    break;
+                case "dataScience":
+                    resultElement.textContent = "You can explore opportunities in data analysis, machine learning, or business intelligence.";
+                    break;
+                default:
+                    resultElement.textContent = "Please select an interest to find future scope.";
+            }
+        }
+    </script>
+</body>
+</html>
