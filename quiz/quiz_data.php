@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-$username = "polyprep";
-$password = "poly@321";
-$dbname = "quizdat";
+$username = "root";
+$password = "";
+$dbname = "quizDat";
 
 try {
     // Create a new PDO instance
