@@ -19,7 +19,7 @@
       <center>
       <div class="one">
         <button onclick="playPause()" name='clicker'>PLAY/PAUSE</button>
-        <button name="login" onclick='logi()'>LOGIN</button>
+        <button name="login" onclick='playPause()'>LOGIN</button>
       </div>
       </center>
       <div class="two">
@@ -33,9 +33,12 @@
 
   <script> 
 	var myVideo = document.getElementById("video1");
-  window.onload= function() {
-    myVideo.play();
-        };
+  function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+}
   function  logi()
   {
     window.location.href = "login.html";

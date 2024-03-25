@@ -1,8 +1,8 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "polyprep";
+$password = "poly@321";
 $dbname = "quizDat";
 
 try {
