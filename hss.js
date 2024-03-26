@@ -4,7 +4,7 @@ const boxes = document.querySelectorAll('.box');
             const content = this.getAttribute('data-text');
             if(content=="Exam preperation")
             {
-            	window.location.href = "./examprep.html";
+            	window.location.href = "examprep.html";
             }
             if(content=="Quiz Time")
             {
