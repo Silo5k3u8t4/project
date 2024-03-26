@@ -4,103 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    .background {
-  
-  position
-  :
-   absolute
-  ;
-    
-  display
-  :
-   block
-  ;
-    
-  top
-  : 0;
-    
-  left
-  : 0;
-    
-  z-index
-  : -2;
-  }
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0; /* Corrected margin value */
-        padding: 0;
-    }
-    
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1 {
-        text-align: center;
-    }
-    
-    .section {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 5px;
-    }
-    
-    form {
-        margin-top: 10px;
-    }
-    
-    input[type="file"] {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    button {
-        padding: 5px 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent body overflow */
+        }
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent; /* Removed background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            z-index: 2;
+            max-width: 400px; /* Adjusted maximum width */
+            width: 100%; /* Added */
+        }
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        form {
+            margin-top: 10px;
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%; /* Added width */
+        }
+        button {
+            width: 100%; /* Added width */
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
     </style>
+</head>
 <body>
-    <canvas class="background"></canvas>
+    <div class="container">
+        <canvas class="background"></canvas>
         <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
         <script>
-        window.onload= function() {
-          Particles.init({selector: '.background'});
-        };
+            window.onload = function() {
+                Particles.init({selector: '.background'});
+            };
         </script>
-    <div class="section notes-upload">
-        <h2>Notes Upload</h2>
-        <form action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm('notes-file')">
-            <input type="file" name="file" id="notes-file">
-            <input type="hidden" name="id" value="notes-file">
-            <button type="submit">Upload</button>
-        </form>
+        <div class="section notes-upload">
+            <h2>Notes Upload</h2>
+            <p>Please specify the note name correctly in the format: branch_subject_Module</p> <!-- Added note -->
+            <form action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm('notes-file')">
+                <input type="file" name="file" id="notes-file">
+                <input type="hidden" name="id" value="notes-file">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        
     </div>
-</body>
-<script>
-    function validateForm(inputId) {
-        var fileInput = document.getElementById(inputId);
-        if (fileInput.files.length === 0) {
-            alert('Please select a file to upload.');
-            return false;
+    <script>
+        function validateForm(inputId) {
+            var fileInput = document.getElementById(inputId);
+            if (fileInput.files.length === 0) {
+                alert('Please select a file to upload.');
+                return false;
+            }
+            return true;
         }
-        return true;
-    }
     </script>
+</body>
 </html>

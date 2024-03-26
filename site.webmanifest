@@ -1,0 +1,17 @@
+{
+    "name": "Polyprep",
+    "short_name": "Polyprep",
+    "description": "Educational help for polytechnic students",
+    "icons": [
+      {
+        "src": "./imgs/favicon-32x32.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+  }
+  
