@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Specify the path to the desktop directory
         $desktop_dir = "./uploads/";
         // Create a directory on the desktop with the received id
-        $target_dir = $desktop_dir . $id . "/";
+        $target_dir = $desktop_dir . $id ;
         
         // Check if the target directory exists, if not, create it
         if (!file_exists($target_dir)) {
@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Check if file has been uploaded successfully
         if ($_FILES["file"]["error"] == UPLOAD_ERR_OK) {
             $target_file = $target_dir . basename($_FILES["file"]["name"]);
-            
             // Move the uploaded file to the target directory
             if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
                 echo "The file " . htmlspecialchars(basename($_FILES["file"]["name"])) . " has been uploaded to folder " . $id . ".";

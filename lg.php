@@ -1,4 +1,6 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 session_start();
 $servername = "localhost";
@@ -99,7 +101,7 @@ function sendOTPEmail($otp, $user_username) {
     $mail->Subject = 'Your OTP';
     $mail->Body = 'Your OTP is: ' . $otp;
     $mail->setFrom($sender_email, 'Polyprep');
-    $mail->addAddress($recipient_email);
+    $mail->addAddress($recipient_email,$user_username);
     if (!$mail->send()) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
