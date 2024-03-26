@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Educational Help for Polytechnic Students</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.css">
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -12,16 +11,12 @@
         padding: 0;
         overflow: hidden;
     }
-
-    #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-
+    .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     .container {
         position: absolute;
         top: 50%;
@@ -37,16 +32,20 @@
 
     .playlist-link {
         display: block;
-        color: #fff;
+        color: black;
         text-decoration: none;
         margin-bottom: 10px;
     }
 </style>
 </head>
 <body>
-
-<div id="particles-js"></div>
-
+    <canvas class="background"></canvas>
+    <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+    <script>
+        window.onload= function() {
+            Particles.init({selector: '.background'});
+        };
+    </script>
 <div class="container">
     <h1>Educational Help for Polytechnic Students</h1>
 
@@ -81,16 +80,7 @@
     </div>
 
     <div id="playlist-links"></div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script>
-    window.onload = function() {
-        particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json', function() {
-            console.log('particles.js loaded');
-        });
-    };
-
     function updatePlaylistLinks() {
         var branch = document.getElementById("branch").value;
         var semester = document.getElementById("semester").value;
