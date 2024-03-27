@@ -1,4 +1,8 @@
 <?php
+$servername = "localhost";
+$username = "polyprep"; 
+$password = "poly@321";
+$dbname = "sps";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_FILES["file"])) {
         // Get the name of the file
